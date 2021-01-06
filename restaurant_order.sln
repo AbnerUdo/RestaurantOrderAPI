@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "restaurant_order", "restaurant_order\restaurant_order.csproj", "{BC2088DB-7001-49AC-AA28-BA56E531D72A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC2088DB-7001-49AC-AA28-BA56E531D72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2088DB-7001-49AC-AA28-BA56E531D72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2088DB-7001-49AC-AA28-BA56E531D72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2088DB-7001-49AC-AA28-BA56E531D72A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F2550EB-F5D8-4630-9D7C-45B31BF5A317}
+	EndGlobalSection
+EndGlobal
