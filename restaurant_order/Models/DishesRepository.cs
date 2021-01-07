@@ -21,9 +21,10 @@ namespace restaurant_order.Models
 
             string dishTypes = order.Substring(order.IndexOf(",") + 1);
 
-            string[] dishTypesSeparated = dishTypes.Split(',');
+            string[] dishTypesSeparated = Regex.Replace(dishTypes, @"\s+", "").Split(',');
+            //string[] dishTypesSeparated = dishTypes.Split(',');
 
-            if(period == "morning" || period == "night")
+            if (period == "morning" || period == "night")
             {
                 dishes.Add(Populate(period, dishTypesSeparated));
                 return true;
@@ -41,34 +42,33 @@ namespace restaurant_order.Models
             foreach (string dishType in dishTypes)
             {
                 if (dishType == "1")
-                {
-                    //dish.dishType = dishType;
+                {                    
                     dish.food += period == "morning" ? "eggs" : "steak";
                 }
                 else if (dishType == "2")
-                {
-                    //dish.dishType = dishType;
+                {                    
                     dish.food += period == "morning" ? "toast" : "potato";
                 }
                 else if (dishType == "3")
-                {
-                    //dish.dishType = dishType;
+                {                    
                     dish.food += period == "morning" ? "Coffee" : "wine";
                 }
                 else if (dishType == "4")
                 {
                     if(period == "morning")
-                    {
-                        //dish.dishType = "error";
+                    {                        
                         dish.food += "error";
                     }
                     else
-                    {
-                        //dish.dishType = dishType;
+                    {                        
                         dish.food += "cake";
                     }                    
                 }
+
+                dish.food += ", ";
             }
+
+            dish.food = dish.food.Substring(0, dish.food.Length - 2);
 
             return dish;
         }
