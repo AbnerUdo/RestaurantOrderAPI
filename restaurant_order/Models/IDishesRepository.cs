@@ -8,7 +8,7 @@ namespace restaurant_order.Models
 {
     public interface IDishesRepository
     {
-        IEnumerable<Dishes> GetAll();
-        bool Add(string period, string dishTypes);
+        IEnumerable<Dish> GetAll();
+        bool Add(string order);
     }
 }

@@ -5,9 +5,9 @@ using System.Web;
 
 namespace restaurant_order.Models
 {
-    public class Dishes
+    public class Dish
     {
         public string dishType { get; set; }
-        public string food{ get; set; }        
+        public string food{ get; set; }          
     }
 }
